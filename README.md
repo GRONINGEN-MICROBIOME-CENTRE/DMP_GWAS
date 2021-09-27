@@ -1,18 +1,18 @@
-# GWAS_UMCG_HPC
+# Microbiome GWAS
 
-Created by: Robert Warmerdam, Esteban Lopera.\
-Created on: 03-03-2021. \
-Contact information: e.a.lopera.maya@umcg.nl, c.a.warmerdam@umcg.nl. 
+Created by: Esteban Lopera,  Robert Warmerdam\
+Created on: 25-09-2021. \
+Contact information: e.a.lopera.maya@umcg.nl. 
 
 ### DESCRIPTION
-Here you will find instructions and scripts to calculate GWAS in the HPC-gearshift using SAIGE
+Here you will find the script used to calculate GWAS for microbiome features in the UMCG high performace computing cluster.
 
-### BASIC INPUT
+### BASIC INPUT (for gwas)
 -Genotype files (VCF, BGEN or GDS). \
 -Phenotype(s) files. \
 -list of selected SNPs for GRM  (GDS or plink format). \
 -list of covariates (or model). 
 
 ### INSTRUCTIONS
-If you are going for a quick analysis we recomend to use the GDS version of SAIGE. it uses the genotype (GT) field of the files and each chromosome might take up to 20 min for 40k samples. You will need all your files to be in GDS format. Otherwise, if you need a more precise, but time consuming (~7h per chormosome in 40k samples) anaylsis use normal SAIGE and prepare vcf of bgen files with their respective index files and make sure they have the dosage (DS field). \
-Detailed instructions are found in the respective folders.
+Prepare vcf of bgen files with their respective index files and make sure they have the dosage (DS field). \
+Detailed instructions are found in the respective folder.
